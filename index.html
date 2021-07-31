@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>OLX - Buy and sell for free</title>
+		<link rel="icon" href="images/olx_logo.jpg">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- fontawesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+   
+</head>
+
+<body>
+    
+    <div id="main">
+        <!-- header -->
+        <header>
+            <div class="top">
+                <div class="container">
+                    <div class="left">
+                        <div class="mainLogo">
+                            <a href="#">
+                                <img src="./images/olx_logo.jpg" alt="logo" >
+                            </a>
+                        </div>
+                       
+                        <div class="search">
+                            <div class="searchFieldDiv">
+                                <input type="text" placeholder="Search.." id="searchField">
+                               
+                            </div>
+                            
+                            <div class="searchBtnDiv">
+                                <button id="searchBtn"><i class="fas fa-search"></i></button>
+                            </div>
+                               
+                            
+                            
+                           
+
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="signinBtnDiv">
+                            <div class="dropdown">
+                                <button id="signinBtn" class="showSignoutBtnHover"><u>Login</u></button>
+                                <div class="dropdownContent" id="dropdownContent">
+                                    <a href="javascript:void(0)" id="myAds">My Ads</a>
+                                    <a href="javascript:void(0)" id="favorites">Favorites</a>
+                                    <a href="javascript:void(0)" id="signoutBtn">Sign out</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sellBtnDiv">
+                            <button id="sellBtn">Sell</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="container">
+                   
+                    <div class="dropdown">
+                        <a href="javascript:void(0)" id="browseCategories"> All Categories &nbsp; <i
+                                class="fas fa-angle-down"></i></a>
+                        <div class="dropdownContent">
+                            <a href="equipments.html" onclick="filter('Equipments')">Equipments</a>
+                            <a href="irrigation.html" onclick="filter('Irrigation')">Irrigation</a>
+                            <a href="fertilizer.html" onclick="filter('Fertilizers')">Fertilizers</a>
+                        </div>
+                    </div>
+                    <a href="irrigation.html" id="nav-one">Irrigation</a>
+                    <a href="equipments.html" id="nav-two">Equipments</a>
+                    <a href="fertilizer.html" id="nav-three">Fertilizers</a>
+                </div>
+            </div>
+            
+        </header>
+        <!-- /header -->
+
+        <!-- banner -->
+        <div class="mainBanner" id="mainBanner">
+            <img src="./images/slider.png   " alt="banner-image" id="mainBannerImg" witdth = "100vw" >
+        </div>
+        <!-- /banner -->
+        
+
+ 
+
+        <!-- top picks for you -->
+        <div class="topPicks">
+            <div class="container" id="topPicksContainer">
+                <div class="heading">
+                    <h2 id="categoryHeading">More on Agriculture</h2>
+                    <hr>
+                </div>
+                <div class="picks" id="picks">
+
+                </div>
+            </div>
+        </div>
+        <!-- /top picks for you -->
+
+        <!-- ITEMS -->
+
+        <div class="itemrow">
+            <div class="card">
+                <a href="product.html">
+                    <img class="medium" src="./images/Irrigation/sprinkler.jpg" alt="product">
+                </a>
+                <div class="card-body">
+                    <a href="product.html">
+                        <h2>Tractor</h2>
+                    </a>
+                    <div class="rating">
+                        <span><i class="fa fa-star"></i></span>
+                        <span><i class="fa fa-star"></i></span>
+                        <span><i class="fa fa-star"></i></span>
+                        <span><i class="fa fa-star"></i></span>
+                        <span><i class="fa fa-star"></i></span>
+                                            
+                    </div>
+                    <div class="price">₹ 1108900</div>
+
+
+
+                </div>
+            </div>
+            <div class="card">
+                <a href="product.html">
+                    <img class="medium" src="./images/Irrigation/sprinkler.jpg" alt="product">
+                </a>
+                <div class="card-body">
+                    <a href="product.html">
+                        <h2>Tractor</h2>
+                    </a>
+                    <div class="rating">
+                        <span><i class="fa fa-star"></i></span>
+                        <span><i class="fa fa-star"></i></span>
+                        <span><i class="fa fa-star"></i></span>
+                        <span><i class="fa fa-star"></i></span>
+                        <span><i class="fa fa-star"></i></span>
+                                            
+                    </div>
+                    <div class="price">₹ 1108900</div>
+
+
+
+                </div>
+            </div>
+            <div class="card">
+                <a href="product.html">
+                    <img class="medium" src="./images/Irrigation/sprinkler.jpg" alt="product">
+                </a>
+                <div class="card-body">
+                    <a href="product.html">
+                        <h2>Tractor</h2>
+                    </a>
+                    <div class="rating">
+                        <span><i class="fa fa-star"></i></span>
+                        <span><i class="fa fa-star"></i></span>
+                        <span><i class="fa fa-star"></i></span>
+                        <span><i class="fa fa-star"></i></span>
+                        <span><i class="fa fa-star"></i></span>
+                                            
+                    </div>
+                    <div class="price">₹ 1108900</div>
+
+
+
+                </div>
+            </div>
+            <div class="card">
+                <a href="product.html">
+                    <img class="medium" src="./images/Irrigation/sprinkler.jpg" alt="product">
+                </a>
+                <div class="card-body">
+                    <a href="product.html">
+                        <h2>Tractor</h2>
+                    </a>
+                    <div class="rating">
+                        <span><i class="fa fa-star"></i></span>
+                        <span><i class="fa fa-star"></i></span>
+                        <span><i class="fa fa-star"></i></span>
+                        <span><i class="fa fa-star"></i></span>
+                        <span><i class="fa fa-star"></i></span>
+                                            
+                    </div>
+                    <div class="price">₹ 1108900</div>
+
+
+
+                </div>
+            </div>
+            <div class="card">
+                <a href="product.html">
+                    <img class="medium" src="./images/Irrigation/sprinkler.jpg" alt="product">
+                </a>
+                <div class="card-body">
+                    <a href="product.html">
+                        <h2>Tractor</h2>
+                    </a>
+                    <div class="rating">
+                        <span><i class="fa fa-star"></i></span>
+                        <span><i class="fa fa-star"></i></span>
+                        <span><i class="fa fa-star"></i></span>
+                        <span><i class="fa fa-star"></i></span>
+                        <span><i class="fa fa-star"></i></span>
+                                            
+                    </div>
+                    <div class="price">₹ 1108900</div>
+
+
+
+                </div>
+            </div>
+
+            <div class="card">
+                <a href="product.html">
+                    <img class="medium" src="./images/Irrigation/sprinkler.jpg" alt="product">
+                </a>
+                <div class="card-body">
+                    <a href="product.html">
+                        <h2>Tractor</h2>
+                    </a>
+                    <div class="rating">
+                        <span><i class="fa fa-star"></i></span>
+                        <span><i class="fa fa-star"></i></span>
+                        <span><i class="fa fa-star"></i></span>
+                        <span><i class="fa fa-star"></i></span>
+                        <span><i class="fa fa-star"></i></span>
+                                            
+                    </div>
+                    <div class="price">₹ 1108900</div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <!--/ITEMS ENDS-->
+
+        <!-- footer -->
+        <footer>
+            <div class="top">
+                <div class="container">
+                    <div class="oneFifth">
+                        <h3>Popular Categories</h3>
+                        <a href="#">Irrigation</a><br>
+                        <a href="#">Equipments</a><br>
+                        <a href="#">Fertilizers</a><br>
+                    </div>
+                    <div class="oneFifth">
+                        <h3>About us</h3>
+                        <a href="#">About OLX Group</a><br>
+                        <a href="#">OLX Blog</a><br>
+                        <a href="#">Contact us </a><br>
+                    </div>
+                    <div class="oneFifth">
+                        <h3>Olx</h3>
+                        <a href="#">Help</a><br>
+                    </div>
+                    <div class="oneFifth footerSocial">
+                        <h3>Follow us</h3>
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="container">
+                    <div class="left">
+                        <span> Developed by Rahul Wasnik, Rupali Bhange, Rohit Posugade.                        
+                        </span>
+                    </div>
+                    <div class="right">
+                        <span class="copyrights">
+                            Copyrights &copy; OLX, 2021.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /footer -->
+    </div>
+
+
+   
+    <!-- js -->
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
